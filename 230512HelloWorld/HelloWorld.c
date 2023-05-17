@@ -1,7 +1,9 @@
-#include <stdio.h> // 전처리기 지시문
+#include <stdio.h> /*include directive*/
+#include <limits.h>
 
 int main(void) 
 {
+	char c = CHAR_BIT;
 	printf("Hello World!\n");
 	return 0;
 }
