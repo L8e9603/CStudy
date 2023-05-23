@@ -1,11 +1,5 @@
 #include <stdio.h>
 
-void foo(void)
-{
-	printf("foo called");
-
-}
-
 int main(void)
 {
 	foo();
@@ -15,3 +9,8 @@ int main(void)
 
 
 
+int foo(void)
+{
+	printf("foo called");
+	return 0;
+}
