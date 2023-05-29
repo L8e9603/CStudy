@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int num[];
+int num[5];
 
 int print_number_recursive(int n)
 {
@@ -23,7 +23,7 @@ int main(void)
 {
 	int i;
 
-	for(i = 0; i < 5; i++)
+	for(i = 4; i > -1; i--)
 	{
 		scanf("%1d", &num[i]);
 	}
