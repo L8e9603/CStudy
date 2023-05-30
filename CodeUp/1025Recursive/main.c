@@ -3,6 +3,22 @@
 
 int num[5];
 
+int print_number_recursive(int n);
+
+int main(void)
+{
+	int i;
+
+	for(i = 4; i > -1; i--)
+	{
+		scanf("%1d", &num[i]);
+	}
+	
+	print_number_recursive(5);
+
+	return 0;
+}
+
 int print_number_recursive(int n)
 {
 	int result;
@@ -17,18 +33,4 @@ int print_number_recursive(int n)
 	printf("[%d]\n", result);
 
 	return print_number_recursive(n-1);
-}
-
-int main(void)
-{
-	int i;
-
-	for(i = 4; i > -1; i--)
-	{
-		scanf("%1d", &num[i]);
-	}
-	
-	print_number_recursive(5);
-
-	return 0;
 }

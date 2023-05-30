@@ -2,6 +2,9 @@
 
 int main(void)
 {
+	int nums[5]
+	int nums2[] = nums[5] ;
+
 	/*goto out_b;*/
 
 	out_c:
