@@ -5,11 +5,6 @@ VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "230512HelloWorld", "230512HelloWorld\230512HelloWorld.vcxproj", "{3AD5400D-736C-4AB0-9C6B-A2AB3B1A4A02}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "솔루션 항목", "솔루션 항목", "{7B4BAFFD-3777-4396-A4AD-AC3BA7A21D67}"
-	ProjectSection(SolutionItems) = preProject
-		CodeUp\1025Recursive\main.c = CodeUp\1025Recursive\main.c
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
