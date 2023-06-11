@@ -2,14 +2,11 @@
 
 int main(void)
 {
-	int nums[5]
-	int nums2[] = nums[5] ;
-
-	/*goto out_b;*/
+	goto out_b;
 
 	out_c:
 		printf("undo c\n");
-	out_b:
+	out_b: /* goto문에 의해 여기로 이동되고, 아래쪽 out_a 레이블 이후 코드도 정상 실행됨 */
 		printf("undo b\n");
 	out_a:
 		printf("undo a\n");
