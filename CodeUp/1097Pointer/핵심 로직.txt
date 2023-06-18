@@ -1,0 +1,24 @@
+/*
+for (j = 0; j < 19; j++)
+{
+	if (stone_coordinate[x_coordinate-1][j] == 0)
+	{
+		stone_coordinate[x_coordinate-1][j] = 1;
+	}
+	else
+	{
+		stone_coordinate[x_coordinate-1][j] = 0;
+	}
+}
+	for (j = 0; j < 19; j++)
+{
+	if (stone_coordinate[j][y_coordinate-1] == 0)
+	{
+		stone_coordinate[j][y_coordinate-1] = 1;
+	}
+	else
+	{
+		stone_coordinate[j][y_coordinate-1] = 0;
+	}
+}
+*/

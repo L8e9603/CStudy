@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int g_x = 100;
+
+void increase_number(void)
+{
+	int y = 200;
+	y += 100;
+	g_x += 100;
+}
+
+int main(void)
+{
+		
+}
