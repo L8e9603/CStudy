@@ -1,8 +1,10 @@
 /* 11399 ATM */
-/* 동적 메모리 배우고 다시 풀기, 버블정렬, 재귀함수, sum 함수 알고리즘은 정답임, num의 값을 길이로 가지는 배열 동적 생성 필요 */
+
 #include <stdio.h>
 
-int* bubble_sort(int arr[], int n);
+#include <stdlib.h>
+
+int bubble_sort(int arr[], int n);
 
 int minimum_time_recursive(int arr[], int n);
 
@@ -11,28 +13,29 @@ int minimum_time_sum(int arr[], int n);
 int main(void)
 {
 	int num = 0;
-	int p[5] = {0, };
-	int asccending_p[5] = {0, };
-	int* asccending_p_ptr = asccending_p;
+	int* p = NULL;
 	int result = 0;
 	int i;
 	
 	scanf("%d", &num);
+
+	p = (int*)malloc(sizeof(int) * num); /* 입력받은 숫자만큼 힙에 배열 공간잡기 */
 
 	for (i = 0; i < num; i++)
 	{
 		scanf("%d", &p[i]);
 	}
 	
-	/* 배열 오름차순으로 버블정렬 */
-	asccending_p_ptr = bubble_sort(p, 5);
-	result = minimum_time_sum(asccending_p_ptr, 5);
-	printf("%d", result);
+	bubble_sort(p, num); /* 배열 오름차순으로 버블정렬 */
+	result = minimum_time_sum(p, num);
+	printf("%lld", result);
+	
+	free(p);
 	
 	return 0;
 }
 
-int* bubble_sort(int arr[], int n)
+int bubble_sort(int arr[], int n)
 {
 	int i, j, temp = 0;
 
@@ -49,7 +52,7 @@ int* bubble_sort(int arr[], int n)
 		}	
 	}
 	
-	return arr;
+	return 0;
 }
 
 int minimum_time_recursive(int arr[], int n)
